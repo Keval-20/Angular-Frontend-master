@@ -4,14 +4,14 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
-import { TemperatureConverter } from './temperatureConverter/temperatureConverter.component';
 import { RouterModule } from '@angular/router';
 import {RouterTestingModule} from '@angular/router/testing';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TemperatureConverter,
+    TemperatureConverterComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +19,7 @@ import {RouterTestingModule} from '@angular/router/testing';
     RouterTestingModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path:'', component: TemperatureConverter }
+      { path:'', component: TemperatureConverterComponent }
     ])
   ],
   exports: [

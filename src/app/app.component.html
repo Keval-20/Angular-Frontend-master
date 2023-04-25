@@ -1,12 +1,2 @@
-<div class="layout-column align-items-center mt-50" >
-  <section class="layout-row align-items-center justify-content-between">
-    <label>Celsius: </label>
-    <input [(ngModel)]="cel" (ngModelChange)="getChangeFah($event)" type="number" class="large" data-test-id="celsius-input" />
-  </section>
-
-  <section class="layout-row align-items-center justify-content-between">
-    <label>Fahrenheit: </label>
-    <input [(ngModel)]="fah" (ngModelChange)="getChangeCel($event)" type="number" class="large" data-test-id="fahrenheit-input" />
-  </section>
-  {{fah}}
-</div>
+<h8k-navbar header="Temperature Converter"></h8k-navbar>
+<temperature-converter></temperature-converter>
